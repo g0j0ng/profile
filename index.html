@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 프로필</title>
+    
+   
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+   <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        $(document).ready(function(){
+    $('.bxslider').bxSlider();
+    });
+    </script>
+
+    <style>
+        .header{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        h2{
+            margin-bottom:5px;
+            font-weight:700;
+            font-size:18px;
+        }
+        .header,.sec{
+            margin: 23px;
+        }
+        
+        .line{
+            height:10px;
+            margin:30px 0;
+            background-color:black;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .main img{
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 200px;
+            
+        }
+        .line2{
+            height: 70px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            text-align: center;
+            color: white;
+            position: fixed;
+            height: 70px;
+            bottom: 0;
+            left: 0;
+            background-color: gray;
+            width: 100%;            
+            z-index: 10000;
+        }
+      
+    </style>
+     
+    
+</head>
+    <section class="wrap">
+        <header class="header">
+            <h1>Profile</h1>
+        </header>
+    </section>
+    <section class="line"></section>
+    
+    <section class="sec">
+        <div class="main">
+            <img src="./images/man.png" alt="사진">
+        </div>
+        <h2>이름</h2>
+        <li>홍길동</li>
+    </section>
+
+    <section class="line"></section>
+
+    <section class="sec">
+        <h2>자기소개</h2>
+            <li>
+                안녕하세요.
+            </li>
+    </section>
+
+    <section class="line"></section>
+
+    <section class="sec"> 
+        <h2 class="images">사진</h2>
+
+        <ul class="bxslider">
+            <li><img src="./images/1.jpg" alt="1"></li>
+            <li><img src="./images/2.jpg" alt="2"></li>
+        </ul>
+
+     
+    </section>
+
+    <section class="line"></section>
+    <div class="line2"></div>
+    <footer class="footer">
+        <address>email@eamil.com</address>
+        <div class="sns">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+    
+<body>
+    
+</body>
+</html>
